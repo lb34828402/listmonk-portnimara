@@ -1,5 +1,20 @@
 export const FONT_FAMILIES = [
   {
+    key: 'PALATINO',
+    label: 'Palatino',
+    value: 'Palatino, "Palatino Linotype", Georgia, serif',
+  },
+  {
+    key: 'BILL_CORPORATE_MEDIUM',
+    label: 'Bill Corporate Medium',
+    value: '"Bill Corporate Medium", Arial, sans-serif',
+  },
+  {
+    key: 'MINION_PRO',
+    label: 'Minion Pro',
+    value: '"Minion Pro", Georgia, serif',
+  },
+  {
     key: 'MODERN_SANS',
     label: 'Modern sans',
     value: '"Helvetica Neue", "Arial Nova", "Nimbus Sans", Arial, sans-serif',
@@ -49,6 +64,9 @@ export const FONT_FAMILIES = [
 ];
 
 export const FONT_FAMILY_NAMES = [
+  'PALATINO',
+  'BILL_CORPORATE_MEDIUM',
+  'MINION_PRO',
   'MODERN_SANS',
   'BOOK_SANS',
   'ORGANIC_SANS',
