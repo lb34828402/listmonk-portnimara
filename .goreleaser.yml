@@ -1,8 +1,10 @@
+project_name: listmonk-portnimara
+
 env:
   - GO111MODULE=on
   - CGO_ENABLED=0
-  - GITHUB_ORG=knadh
-  - DOCKER_ORG=listmonk
+  - GITHUB_ORG=lb34828402
+  - DOCKER_ORG=lb34828402
 
 before:
   hooks:
