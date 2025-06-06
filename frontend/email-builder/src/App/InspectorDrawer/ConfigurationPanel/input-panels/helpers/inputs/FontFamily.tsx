@@ -4,6 +4,9 @@ import { MenuItem, TextField } from '@mui/material';
 
 import { FONT_FAMILIES } from '../../../../../../documents/blocks/helpers/fontFamily';
 
+// Debug: Log font families when component loads
+console.log('[LISTMONK DEBUG] FontFamily component loaded with fonts:', FONT_FAMILIES.map(f => f.label));
+
 const OPTIONS = FONT_FAMILIES.map((option) => (
   <MenuItem key={option.key} value={option.key} sx={{ fontFamily: option.value }}>
     {option.label}

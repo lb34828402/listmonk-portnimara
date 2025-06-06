@@ -1,3 +1,6 @@
+// Debug: Log when this file is loaded
+console.log('[LISTMONK DEBUG] Loading custom fonts - v5.1.2', new Date().toISOString());
+
 export const FONT_FAMILIES = [
   {
     key: 'PALATINO',
