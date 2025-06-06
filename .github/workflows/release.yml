@@ -31,23 +31,26 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Cache Node modules
+      - name: Cache Yarn modules
         uses: actions/cache@v3
         with:
-          path: frontend/node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('frontend/package-lock.json') }}
+          path: |
+            frontend/node_modules
+            frontend/email-builder/node_modules
+            ~/.yarn/cache
+          key: ${{ runner.os }}-yarn-${{ hashFiles('frontend/yarn.lock', 'frontend/email-builder/yarn.lock') }}
           restore-keys: |
-            ${{ runner.os }}-node-
+            ${{ runner.os }}-yarn-
 
       - name: Install frontend dependencies
         run: |
           cd frontend
-          npm ci
+          yarn install --frozen-lockfile
 
       - name: Install email-builder dependencies
         run: |
           cd frontend/email-builder
-          npm ci
+          yarn install --frozen-lockfile
 
       - name: Build frontend
         run: make build-frontend
