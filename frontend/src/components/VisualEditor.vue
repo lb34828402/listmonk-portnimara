@@ -134,8 +134,48 @@ export default {
       <!DOCTYPE html>
       <html>
         <head>
-          <link rel="stylesheet" href="/admin/static/custom-fonts.css">
           <style>
+            /* Custom fonts for email builder */
+            @font-face {
+              font-family: 'Palatino';
+              font-style: normal;
+              font-weight: 400;
+              src: url('https://s3.portnimara.com/fonts/Palatino.woff') format('woff');
+              font-display: swap;
+            }
+
+            @font-face {
+              font-family: 'Bill Corporate Medium';
+              font-style: normal;
+              font-weight: 300;
+              src: url('https://s3.portnimara.com/fonts/Bill%20corporate%20medium%20light.woff') format('woff');
+              font-display: swap;
+            }
+
+            @font-face {
+              font-family: 'Bill Corporate Medium';
+              font-style: normal;
+              font-weight: 400;
+              src: url('https://s3.portnimara.com/fonts/Bill%20corporate%20medium%20roman.woff') format('woff');
+              font-display: swap;
+            }
+
+            @font-face {
+              font-family: 'Bill Corporate Medium';
+              font-style: normal;
+              font-weight: 500;
+              src: url('https://s3.portnimara.com/fonts/Bill%20corporate%20medium%20book.woff') format('woff');
+              font-display: swap;
+            }
+
+            @font-face {
+              font-family: 'Minion Pro';
+              font-style: normal;
+              font-weight: 400;
+              src: url('https://s3.portnimara.com/fonts/MinionPro-Regular.woff') format('woff');
+              font-display: swap;
+            }
+
             body { margin: 0; padding: 0; }
             #visual-editor-container { width: 100%; height: 100%; }
           </style>
