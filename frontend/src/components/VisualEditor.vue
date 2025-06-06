@@ -134,6 +134,7 @@ export default {
       <!DOCTYPE html>
       <html>
         <head>
+          <link rel="stylesheet" href="/admin/static/custom-fonts.css">
           <style>
             body { margin: 0; padding: 0; }
             #visual-editor-container { width: 100%; height: 100%; }
