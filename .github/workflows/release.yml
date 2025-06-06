@@ -41,7 +41,7 @@ jobs:
             frontend/node_modules
             frontend/email-builder/node_modules
             ~/.yarn/cache
-          key: ${{ runner.os }}-yarn-${{ hashFiles('frontend/yarn.lock', 'frontend/email-builder/yarn.lock') }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('frontend/yarn.lock', 'frontend/email-builder/yarn.lock', 'frontend/email-builder/src/documents/blocks/helpers/fontFamily.ts') }}-v2
           restore-keys: |
             ${{ runner.os }}-yarn-
 
